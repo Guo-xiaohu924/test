@@ -1,0 +1,11 @@
+<robot name="airplane">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0.1 0 0.05" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="package://fixed_wing_slam/launch/fixwing_model/evtol/evtol.dae" scale="0.025 0.025 0.025"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
+

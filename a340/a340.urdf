@@ -1,0 +1,11 @@
+<robot name="airplane">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0.64 -0.61 -0.1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="package://fixed_wing_slam/launch/fixwing_model/a340/a340.dae" scale="0.0005 0.0005 0.0005"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
+

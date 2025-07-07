@@ -1,0 +1,11 @@
+<launch>
+  <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find fixed_wing_slam)/launch/fixwing_model/Etihad-747/Etihad-747.urdf'" /> -->
+  <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find fixed_wing_slam)/launch/fixwing_model/Etihad-747/Etihad-747.urdf'" /> -->
+  <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find fixed_wing_slam)/launch/fixwing_model/standard_vtol/standard_vtol.urdf'" /> -->
+  <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find fixed_wing_slam)/launch/fixwing_model/c919/c919.urdf'" /> -->
+  <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find fixed_wing_slam)/launch/fixwing_model/a340/a340.urdf'" /> -->
+  <param name="robot_description" command="$(find xacro)/xacro '$(find fixed_wing_slam)/launch/fixwing_model/evtol/evtol.urdf'" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fixed_wing_slam)/launch/default.rviz" />
+</launch>
+
